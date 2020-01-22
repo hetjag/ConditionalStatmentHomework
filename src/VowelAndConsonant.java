@@ -1,52 +1,17 @@
-public class VowelAndConsonant {
+import java.util.Scanner;
 
-
-
+public class VowelAndConsonant { // class name
 
     public static void main(String[] args){     // main method
+        Scanner scanner = new Scanner(System.in);     // scanner method
+        System.out.println("Enter any character from alphabets = "); // user can use this method for entering character
+        char temp = scanner.next().charAt(0); //storing char value
 
-        int number = 4; // number value
-        switch (number){    // variable name
-
-            case 1 :        // declare days
-                System.out.println("Monday");  // declare day name
-                break;
-            case 2 :         // declare days
-                System.out.println("Tuesday");  // declare day name
-                break;
-            case 3 :         // declare days
-                System.out.println("Wednesday"); // declare day name
-                break;
-            case 4 :         // declare days
-                System.out.println("Thursday");  // declare day name
-                break;
-            case 5 :         // declare days
-                System.out.println("Friday");   // declare day name
-                break;
-            case 6 :         // declare days
-                System.out.println("Saturday");  // declare day name
-                break;
-            case 7 :         // declare days
-                System.out.println("Sunday");    // declare day name
-                break;
-
-
-            default:
-                System.out.println(" You enter wrong number ");  // declare default statement
-
-
-
-
-
-
-
-
-
-
+        if(temp=='a'||temp=='e'||temp=='i'|| temp=='o'|| temp=='u'||temp=='A'||temp=='E'||temp=='I'||temp=='O'||temp=='U'){
+            System.out.println("Entered character is Vowel"); // It will print vowel
         }
-
-
-
-
+        else {
+            System.out.println("Entered character is consonant"); // It will print consonant
+        }
     }
 }
